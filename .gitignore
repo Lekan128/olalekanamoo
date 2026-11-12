@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+# huge original photos stay local; the site uses the optimised copies in assets/img
+photos/
+# source résumés (the published copies live in public/files/)
+/Olalekan Amoo Mechanical Engineering Resume.pdf
+/Olalekan_Amoo_Resume --.pdf

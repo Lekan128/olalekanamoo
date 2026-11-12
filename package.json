@@ -1,0 +1,14 @@
+{
+  "name": "olalekan-amoo-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/build-images.mjs",
+    "serve": "npx --yes serve -l 4321 ."
+  },
+  "devDependencies": {
+    "@fontsource/dm-serif-display": "^5.0.0",
+    "@fontsource-variable/manrope": "^5.0.0",
+    "sharp": "^0.33.0"
+  }
+}

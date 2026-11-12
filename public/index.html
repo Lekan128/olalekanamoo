@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olalekan Amoo — Backend &amp; Cloud Engineer (Java, Spring Boot, AWS, Azure)</title>
+  <meta name="description" content="Olalekan Amoo builds and runs backend systems in Java and Spring Boot on AWS and Azure. Cut API latency 43% and moved 300+ tenants with zero downtime.">
+  <meta name="theme-color" content="#1f3a2b">
+  <link rel="canonical" href="https://olalekanamoo.com/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Olalekan Amoo — Backend & Cloud Engineer">
+  <meta property="og:description" content="Backends that hold steady, so your product can grow. Java · Spring Boot · AWS · Azure.">
+  <meta property="og:image" content="https://olalekanamoo.com/assets/img/og-card.jpg">
+  <meta property="og:url" content="https://olalekanamoo.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-serif-display-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high"
+        imagesrcset="assets/img/lekan-suit-400.avif 400w, assets/img/lekan-suit-640.avif 640w, assets/img/lekan-suit-920.avif 920w"
+        imagesizes="(max-width: 860px) 82vw, 460px">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="prefetch" href="tree.html">
+
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Olalekan Farouq Amoo",
+    "jobTitle": "Software Engineer",
+    "url": "https://olalekanamoo.com/",
+    "image": "https://olalekanamoo.com/assets/img/lekan-suit-640.jpg",
+    "email": "mailto:olalekanamoo128@gmail.com",
+    "alumniOf": "University of Lagos",
+    "knowsAbout": ["Java", "Spring Boot", "AWS", "Azure", "REST APIs", "OAuth 2.0", "PostgreSQL", "Docker"],
+    "sameAs": ["https://www.linkedin.com/in/olalekan-amoo-65bb83212/", "https://github.com/Lekan128"]
+  }
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5C10.8 3.4 4 8.4 4 15.6c0 1.6.4 3 1 4.4 1.4-5.6 5.2-9.5 10.6-11.8-4.6 3-7.6 7-9 12.3 1 .3 2 .5 3.1.5 7.1 0 10.8-6.2 10.8-17.5z"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9M12 12C12 8 9 6 5 6c0 4 3 6 7 6zM12 10c0-3 2.5-5 6.5-5 0 3.5-2.5 5-6.5 5z"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="4" width="17" height="7" rx="2"/><rect x="3.5" y="13" width="17" height="7" rx="2"/><path d="M7.5 7.5h.01M7.5 16.5h.01M11 7.5h6M11 16.5h6"/></symbol>
+    <symbol id="i-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h14l-3.5-3.5M20 16H6l3.5 3.5"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a8.5 8.5 0 1 1 17 0"/><path d="M12 17l4.5-6"/><circle cx="12" cy="17" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15.5" r="4.5"/><path d="M11.3 12.2L20 3.5M16.5 7l3 3M14.5 9l2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 20l1.4-4A8.5 8.5 0 1 1 8.6 19z"/><path d="M9 10.5c.5 2 2 3.6 4.4 4.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.6 13.9L7.5 21l4.5-2.6 4.5 2.6-1.1-7.1"/><path d="M9.6 9l1.6 1.6 3.2-3.2"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44V26M24 32l-6-5M24 29l7-6"/><path d="M14 30a9 9 0 0 1-1-17.5A11 11 0 0 1 34 10a9 9 0 0 1 1 18.5"/><circle cx="16" cy="22" r="2.4" fill="currentColor"/><circle cx="31" cy="18" r="2.4" fill="currentColor"/><circle cx="24" cy="14" r="2.4" fill="currentColor"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-node" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M16.6 7.2c-4.9 0-8.2 2.5-8.2 6.1 0 .8.2 1.5.5 2.2.7-2.8 2.6-4.8 5.3-5.9-2.3 1.5-3.8 3.5-4.5 6.2.5.2 1 .2 1.5.2 3.6 0 5.4-3.1 5.4-8.8z"/></symbol>
+    <symbol id="sprig" viewBox="0 0 120 220">
+      <path d="M62 218C58 160 60 100 72 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <g fill="currentColor">
+        <path transform="translate(61 196) rotate(-150)" d="M0 0C12-14 34-14 46 0 34 12 12 12 0 0z" opacity=".85"/>
+        <path transform="translate(61 176) rotate(-28)" d="M0 0C12-14 34-14 46 0 34 12 12 12 0 0z"/>
+        <path transform="translate(62 150) rotate(-155)" d="M0 0C12-14 34-14 46 0 34 12 12 12 0 0z"/>
+        <path transform="translate(63 126) rotate(-30)" d="M0 0C11-13 31-13 42 0 31 11 11 11 0 0z" opacity=".85"/>
+        <path transform="translate(65 100) rotate(-150)" d="M0 0C11-13 31-13 42 0 31 11 11 11 0 0z"/>
+        <path transform="translate(67 76) rotate(-35)" d="M0 0C10-12 28-12 38 0 28 10 10 10 0 0z"/>
+        <path transform="translate(69 52) rotate(-145)" d="M0 0C9-11 25-11 34 0 25 9 9 9 0 0z" opacity=".85"/>
+        <path transform="translate(71 30) rotate(-45)" d="M0 0C8-10 22-10 30 0 22 8 8 8 0 0z"/>
+        <path transform="translate(72 10) rotate(-95)" d="M0 0C7-9 19-9 26 0 19 7 7 7 0 0z"/>
+      </g>
+    </symbol>
+    <symbol id="leaf" viewBox="0 0 100 140">
+      <path fill="currentColor" d="M50 138S6 104 6 62C6 30 30 8 50 2c20 6 44 28 44 60 0 42-44 76-44 76z"/>
+      <path fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round" d="M50 134V16M50 42L31 28M50 42l19-14M50 66L25 50M50 66l25-16M50 92L27 76M50 92l23-16"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="./" aria-label="Olalekan Amoo, home">
+        <span class="brand-mark"><svg style="color:#dce5d2"><use href="#i-leaf"/></svg></span>
+        Olalekan Amoo
+      </a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="roots.html">Roots</a></li>
+      </ul>
+      <div class="mode-switch" role="group" aria-label="View mode">
+        <a href="./" aria-current="page"><svg><use href="#i-list"/></svg>Classic</a>
+        <a href="tree.html"><svg viewBox="0 0 48 48"><use href="#i-tree"/></svg>Tree</a>
+      </div>
+      <a class="btn btn--terra btn--sm nav-cta" href="#contact">Let's talk</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="roots.html">Roots · Mechanical Eng.</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mode-switch" role="group" aria-label="View mode">
+        <a href="./" aria-current="page"><svg><use href="#i-list"/></svg>Classic</a>
+        <a href="tree.html"><svg viewBox="0 0 48 48"><use href="#i-tree"/></svg>Tree</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Backend &amp; Cloud Engineer · Lagos</p>
+        <h1>Backends that hold steady, <em>so your product can grow.</em></h1>
+        <p class="lede">I'm Olalekan, a Java and Spring Boot engineer working on AWS and Azure. I cut API latency by 43% on a platform with 100K+ students, and moved 300+ tenants onto new infrastructure without a minute of downtime.</p>
+        <div class="hero-actions">
+          <a class="btn btn--terra" href="#contact">Start a conversation <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="files/Olalekan-Amoo-Software-Engineer-Resume.pdf" download>Download résumé <svg><use href="#i-download"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="arch-backdrop" aria-hidden="true"></div>
+        <div class="arch">
+          <picture>
+            <source type="image/avif" srcset="assets/img/lekan-suit-400.avif 400w, assets/img/lekan-suit-640.avif 640w, assets/img/lekan-suit-920.avif 920w" sizes="(max-width: 860px) 82vw, 460px">
+            <source type="image/webp" srcset="assets/img/lekan-suit-400.webp 400w, assets/img/lekan-suit-640.webp 640w, assets/img/lekan-suit-920.webp 920w" sizes="(max-width: 860px) 82vw, 460px">
+            <img src="assets/img/lekan-suit-640.jpg" width="640" height="782" alt="Olalekan Amoo in a grey suit and red tie, smiling" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <p class="tag"><span class="tag-hole" aria-hidden="true"></span><span class="tag-name">Olalekan Amoo</span>Backend engineer · since 2022</p>
+        <svg class="sprig hero-sprig" viewBox="0 0 120 220" aria-hidden="true"><use href="#sprig"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section class="proof" aria-label="In short">
+    <div class="wrap">
+      <p>Right now I help run an education platform used by <b>100,000+ students</b> across <b>300+ tenants</b>. I'm an <a href="https://www.credly.com/badges/2bd7260d-1446-4e87-a885-1500d7deb14e/public_url" target="_blank" rel="noopener">AWS Solutions Architect</a> and a <a href="https://learn.microsoft.com/en-gb/users/olalekanamoo-5400/credentials/3231464c72d9e658" target="_blank" rel="noopener">Microsoft Azure Administrator</a>, and the person people call when production does something strange.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="wrap split">
+      <div class="split-aside">
+        <p class="eyebrow"><span class="no">No. 01</span>Services</p>
+        <h2>The work I do best</h2>
+        <p class="lede" style="margin-top:18px">Hiring for your team or need a project done? These are the problems I usually get brought in for.</p>
+      </div>
+      <ol class="offer">
+        <li>
+          <span class="offer-no">i.</span>
+          <div>
+            <h3>Backend &amp; API development</h3>
+            <p>Java and Spring Boot services with clean REST APIs, written so the next engineer can read, test and extend them.</p>
+          </div>
+          <p class="offer-out">APIs your team can build on</p>
+        </li>
+        <li>
+          <span class="offer-no">ii.</span>
+          <div>
+            <h3>Zero-downtime migrations</h3>
+            <p>Platform, Docker and DNS upgrades planned around TTLs, connection draining and a way back if anything goes wrong.</p>
+          </div>
+          <p class="offer-out">Upgrades your users never notice</p>
+        </li>
+        <li>
+          <span class="offer-no">iii.</span>
+          <div>
+            <h3>Performance &amp; reliability</h3>
+            <p>Slow queries, memory leaks and caching surprises. I find the actual cause, fix it, and write down what happened.</p>
+          </div>
+          <p class="offer-out">Faster pages, quieter on-call</p>
+        </li>
+        <li>
+          <span class="offer-no">iv.</span>
+          <div>
+            <h3>Integrations &amp; auth</h3>
+            <p>OAuth 2.0, OpenID Connect, Sign in with Apple, multi-tenant API keys and rate limits for third-party partners.</p>
+          </div>
+          <p class="offer-out">Secure ways in for partners</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CASE STUDIES ============ -->
+  <section class="section tint" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span class="no">No. 02</span>Work</p>
+          <h2>Problems I've solved</h2>
+        </div>
+      </div>
+
+      <div class="cases">
+        <article class="case">
+          <div class="case-num">43%<small>Faster responses</small></div>
+          <div>
+            <h3>Speeding up an API for 100K+ students</h3>
+            <p class="ctx">Flexisaf · education platform</p>
+          </div>
+          <div class="case-body">
+            <p>Average response time was 959.5ms. I traced the slow endpoints to heavy Java database queries and backend logic that repeated work, then rewrote both. The average fell to 545ms.</p>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>SQL</li><li>Profiling</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-num">0 min<small>Downtime</small></div>
+          <div>
+            <h3>Upgrading a platform with 300+ tenants live on it</h3>
+            <p class="ctx">AWS Elastic Beanstalk · 100K+ users</p>
+          </div>
+          <div class="case-body">
+            <p>I led the Docker and platform version upgrade for a critical application. A Python/boto3 script cut over 300+ DNS records automatically, timed around TTL expiry and connection draining so no one was dropped.</p>
+            <ul class="tags"><li>AWS</li><li>Docker</li><li>Python</li><li>boto3</li><li>DNS</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-num">2,000+<small>Concurrent uploads</small></div>
+          <div>
+            <h3>A payment-upload pipeline that stopped crashing</h3>
+            <p class="ctx">Batch processing · student payments</p>
+          </div>
+          <div class="case-body">
+            <p>The pipeline ran out of memory under load. I moved processing to file-based staging and cleared the entity manager between batches, so memory stays flat even with thousands of files arriving at once.</p>
+            <ul class="tags"><li>Java</li><li>JPA / Hibernate</li><li>Batch processing</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-num">40→1<small>Lines per component</small></div>
+          <div>
+            <h3>Change-tracking that takes one annotation</h3>
+            <p class="ctx">Internal tooling · adopted across the team</p>
+          </div>
+          <div class="case-body">
+            <p>I built a framework using reflection and annotations that compares an entity before and after a change. Teams write one line instead of forty, which cut instrumentation effort by 90% and made every service log changes the same way.</p>
+            <ul class="tags"><li>Java reflection</li><li>Annotations</li><li>Observability</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap split">
+      <div class="split-aside">
+        <p class="eyebrow"><span class="no">No. 03</span>Experience</p>
+        <h2>Three years of production work</h2>
+        <p class="lede" style="margin-top:18px">I build and run production software, mostly on an education platform with 100K+ students and 300+ tenants. Open a role for the details.</p>
+        <p><a class="link-arrow" href="files/Olalekan-Amoo-Software-Engineer-Resume.pdf" download>Download the full résumé (PDF)</a></p>
+      </div>
+
+      <div>
+        <ol class="timeline">
+          <li class="role">
+            <svg class="role-node" aria-hidden="true"><use href="#i-node"/></svg>
+            <details open>
+              <summary>
+                <h3>Associate Full-Stack Engineer</h3>
+                <span class="meta">Flexisaf Edusoft Limited</span>
+                <span class="when">Jan 2025 – Now</span>
+              </summary>
+              <div class="role-body">
+                <ul>
+                  <li>The four results under <a class="link-arrow" href="#work">Work</a>: 43% faster API, zero-downtime upgrade for 300+ tenants, a 2,000-upload pipeline, and one-line change tracking.</li>
+                  <li>Production support for containerised services on AWS ECS. Diagnosed a recurring memory incident to two causes (an OpenTelemetry integration and a long-running report job) and coordinated the mitigation.</li>
+                  <li>Found that a shared CloudFront distribution cached endpoints by default; added explicit cache-control headers so affected APIs return fresh data.</li>
+                  <li>Architected a secure external API layer with multi-tenant API keys, rate limiting and annotation-based auth.</li>
+                  <li>Mentored 6 junior engineers on TDD; led internal sessions on AWS and on using AI tools well.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="role">
+            <svg class="role-node" aria-hidden="true"><use href="#i-node"/></svg>
+            <details>
+              <summary>
+                <h3>Backend Developer</h3>
+                <span class="meta">Lellall Technologies Ltd · grocery e-commerce</span>
+                <span class="when">Sep 2023 – Jan 2025</span>
+              </summary>
+              <div class="role-body">
+                <ul>
+                  <li>Owned backend features end to end for a grocery e-commerce platform, designing the Java services behind local market deliveries.</li>
+                  <li>Implemented sign-in with OAuth 2.0 and OpenID Connect (including Sign in with Apple) alongside encrypted email/password, which improved onboarding conversion and retention.</li>
+                  <li>Monitored DigitalOcean Droplet logs to diagnose and fix production issues quickly.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="role">
+            <svg class="role-node" aria-hidden="true"><use href="#i-node"/></svg>
+            <details>
+              <summary>
+                <h3>Intern Backend Developer</h3>
+                <span class="meta">Flexisaf Edusoft Limited</span>
+                <span class="when">Oct 2022 – Aug 2023</span>
+              </summary>
+              <div class="role-body">
+                <ul>
+                  <li>Built scalable backend components with senior engineers for institutional clients.</li>
+                  <li>Switched between Spring Boot, Quarkus and GWT to ship high-priority features for education management systems.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ol>
+
+        <div class="tree-invite">
+          <svg aria-hidden="true"><use href="#i-tree"/></svg>
+          <p>Prefer something more hands-on? See the same story as a tree you can pick from.</p>
+          <a class="btn btn--sm" href="tree.html">Open Tree mode <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section tint" id="projects">
+    <div class="wrap">
+      <div class="split">
+        <div class="split-aside">
+          <p class="eyebrow"><span class="no">No. 04</span>Projects</p>
+          <h2>Things I built for fun</h2>
+        </div>
+        <ul class="plist">
+          <li>
+            <a href="https://github.com/Lekan128/AiAgent" target="_blank" rel="noopener">
+              <h3>AI Agent <span aria-hidden="true">↗</span></h3>
+              <p>A reusable Java library that lets AI systems call chosen methods in your project, with a clean abstraction layer and Maven-based dependency injection.</p>
+              <p class="stack">Java · Maven</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Lekan128/stock-up-api" target="_blank" rel="noopener">
+              <h3>StockUp <span aria-hidden="true">↗</span></h3>
+              <p>An AI-powered inventory manager, fully deployed on AWS with application-level caching behind Nginx.</p>
+              <p class="stack">React · TypeScript · Spring Boot · EC2 · RDS · S3</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Lekan128/Digital-Wellness" target="_blank" rel="noopener">
+              <h3>Digital Alertness <span aria-hidden="true">↗</span></h3>
+              <p>An Android wellness app that nudges you after long stretches of social media use.</p>
+              <p class="stack">Kotlin · Android</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap about">
+      <div class="about-photo">
+        <div class="frame">
+          <picture>
+            <source type="image/avif" srcset="assets/img/lekan-smile-400.avif 400w, assets/img/lekan-smile-640.avif 640w, assets/img/lekan-smile-880.avif 880w" sizes="(max-width: 900px) 82vw, 440px">
+            <source type="image/webp" srcset="assets/img/lekan-smile-400.webp 400w, assets/img/lekan-smile-640.webp 640w, assets/img/lekan-smile-880.webp 880w" sizes="(max-width: 900px) 82vw, 440px">
+            <img src="assets/img/lekan-smile-640.jpg" width="640" height="800" alt="Olalekan Amoo smiling with arms crossed" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="stamp" aria-hidden="true">AWS &amp; Azure certified</div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow"><span class="no">No. 05</span>About</p>
+        <h2>From gears to gateways</h2>
+        <p>I studied Mechanical Engineering at the University of Lagos, where I learned to think in loads, tolerances and failure modes. I started writing Java professionally as an intern in 2022 and never looked back.</p>
+        <p>The habits came with me: measure before changing anything, design for the worst day, and leave clear notes for whoever comes next. I also mentor engineers (six juniors so far, on test-driven development) and run internal sessions on AWS and on using AI tools well.</p>
+        <p><a class="link-arrow" href="roots.html">See my mechanical engineering roots</a></p>
+        <ul class="certs">
+          <li><a class="cert" href="https://www.credly.com/badges/2bd7260d-1446-4e87-a885-1500d7deb14e/public_url" target="_blank" rel="noopener"><svg><use href="#i-badge"/></svg><span><b>AWS Solutions Architect – Associate</b><span>Verify on Credly ↗</span></span></a></li>
+          <li><a class="cert" href="https://learn.microsoft.com/en-gb/users/olalekanamoo-5400/credentials/3231464c72d9e658" target="_blank" rel="noopener"><svg><use href="#i-badge"/></svg><span><b>Azure Administrator Associate</b><span>Verify on Microsoft ↗</span></span></a></li>
+          <li><a class="cert" href="https://www.udemy.com/certificate/UC-737409da-8141-4ac7-b08d-e07df89549ad/" target="_blank" rel="noopener"><svg><use href="#i-badge"/></svg><span><b>Spring Security 6</b><span>Udemy certificate ↗</span></span></a></li>
+          <li><a class="cert" href="https://www.udemy.com/certificate/UC-3a16042d-ee51-4cfd-811c-0db495feae1e/" target="_blank" rel="noopener"><svg><use href="#i-badge"/></svg><span><b>JDBC, Servlets &amp; JSP</b><span>Udemy certificate ↗</span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section tint" id="faq">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow"><span class="no">No. 06</span>FAQ</p>
+        <h2>Questions people usually ask</h2>
+        <p class="lede" style="margin-top:18px">Something else on your mind? <a class="link-arrow" href="#contact">Ask me directly</a>.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How quickly will I hear back?</summary>
+          <p>On WhatsApp, within one working day. Email and the form below reach me too, but WhatsApp is the fastest.</p>
+        </details>
+        <details>
+          <summary>What kind of projects are a good fit?</summary>
+          <p>API builds, AWS or Azure setups and migrations, performance problems, and authentication or third-party integrations. If it's a backend problem that's keeping someone up at night, it's probably a fit.</p>
+        </details>
+        <details>
+          <summary>What time zone do you work in?</summary>
+          <p>West Africa Time (UTC+1). That covers the whole UK and European working day and overlaps with mornings on the US East Coast.</p>
+        </details>
+        <details>
+          <summary>What's it like to work with you?</summary>
+          <p>We start with a short call to understand the problem. Then I send a written plan with scope and trade-offs, and deliver in small, reviewable pieces. You'll always know what's done, what's next and what's blocking.</p>
+        </details>
+        <details>
+          <summary>A mechanical engineer writing backends?</summary>
+          <p>I've been a professional backend engineer since 2022 and hold AWS and Azure certifications. The engineering degree gave me a habit that's useful in software: working out the load before something breaks under it.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <svg class="contact-leaf" aria-hidden="true"><use href="#leaf"/></svg>
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow"><span class="no">No. 07</span>Contact</p>
+        <h2>Tell me what you're <em>building.</em></h2>
+        <p class="contact-lede">A role you're hiring for, a system that keeps falling over, or an idea that needs a backend. Send a few lines and I'll take it from there.</p>
+        <ul class="direct">
+          <li><a href="mailto:olalekanamoo128@gmail.com"><svg><use href="#i-mail"/></svg><span>olalekanamoo128@gmail.com<small>Email me directly</small></span></a></li>
+          <li><a href="https://www.linkedin.com/in/olalekan-amoo-65bb83212/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg><span>LinkedIn<small>Connect or message me</small></span></a></li>
+          <li><a href="https://wa.me/2348062740991" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg><span>WhatsApp<small>Fastest way to reach me</small></span></a></li>
+          <li><a href="https://github.com/Lekan128" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg><span>GitHub<small>github.com/Lekan128</small></span></a></li>
+        </ul>
+        <p class="promise"><svg><use href="#i-clock"/></svg>On WhatsApp, I reply within one working day.</p>
+      </div>
+
+      <div class="form" id="lead">
+        <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <h3>Send a message</h3>
+          <p>Takes about a minute.</p>
+          <fieldset class="field">
+            <legend>I'm getting in touch about</legend>
+            <div class="choices">
+              <label><input type="radio" name="topic" value="Full-time role" checked><span>A full-time role</span></label>
+              <label><input type="radio" name="topic" value="Contract project"><span>A contract project</span></label>
+              <label><input type="radio" name="topic" value="Something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+          <div class="field-row">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="f-company">Company <span style="font-weight:500;color:var(--muted)">(optional)</span></label><input id="f-company" name="company" autocomplete="organization"></div>
+          <div class="field"><label for="f-msg">What do you need?</label><textarea id="f-msg" name="message" required placeholder="A sentence or two is plenty."></textarea></div>
+          <button class="btn btn--terra" type="submit">Send message <svg><use href="#i-arrow"/></svg></button>
+          <p class="form-note form-error" data-form-error hidden>Your message didn't send because the form service couldn't be reached. Please email <a href="mailto:olalekanamoo128@gmail.com">olalekanamoo128@gmail.com</a>, and I'll reply the same way.</p>
+          <p class="form-note">No spam, no mailing lists. Just a reply from me.</p>
+        </form>
+        <div class="form-status" role="status" aria-live="polite">
+          <svg><use href="#i-check"/></svg>
+          <h3>Message received</h3>
+          <p>Thank you. I'll get back to you by email soon. For anything urgent, <a href="https://wa.me/2348062740991">message me on WhatsApp</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Olalekan Amoo</span>
+    <nav aria-label="Footer">
+      <a href="tree.html">Tree mode</a>
+      <a href="roots.html">Mechanical engineering</a>
+      <a href="files/Olalekan-Amoo-Software-Engineer-Resume.pdf" download>Résumé</a>
+      <a href="https://www.linkedin.com/in/olalekan-amoo-65bb83212/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Lekan128" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="btn btn--terra float-cta" href="#contact" aria-hidden="true" tabindex="-1">Let's talk about your project <svg><use href="#i-arrow"/></svg></a>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
