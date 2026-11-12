@@ -28,7 +28,8 @@ for (const j of jobs) {
     const base = sharp(file).rotate().extract(region).resize({ width: w });
     await base.clone().avif({ quality: 40, effort: 8, chromaSubsampling: "4:2:0" }).toFile(`${OUT}/${j.name}-${w}.avif`);
     await base.clone().webp({ quality: 62, effort: 6, smartSubsample: true }).toFile(`${OUT}/${j.name}-${w}.webp`);
-    await base.clone().jpeg({ quality: 68, mozjpeg: true, progressive: true }).toFile(`${OUT}/${j.name}-${w}.jpg`);
+    // JPEG is only the <img> fallback for very old browsers, so one size is enough
+    if (w === 640) await base.clone().jpeg({ quality: 68, mozjpeg: true, progressive: true }).toFile(`${OUT}/${j.name}-${w}.jpg`);
   }
   // tiny blurred placeholder colour, printed so it can be pasted into CSS
   const { dominant } = await sharp(file).stats();
