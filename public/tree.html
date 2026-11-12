@@ -72,16 +72,26 @@
         <span aria-current="page"><svg viewBox="0 0 48 48"><use href="#i-tree"/></svg>Tree</span>
       </div>
       <a class="btn btn--terra btn--sm nav-cta" href="./#contact">Let's talk</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="i-open"><use href="#i-menu"/></svg><svg class="i-shut"><use href="#i-close"/></svg></button>
     </nav>
     <div class="mobile-menu" id="mobile-menu">
-      <ul>
-        <li><a href="./">Classic view</a></li>
-        <li><a href="./#work">Work</a></li>
-        <li><a href="./#about">About</a></li>
-        <li><a href="roots.html">Roots · Mechanical Eng.</a></li>
-        <li><a href="./#contact">Contact</a></li>
-      </ul>
+      <p class="mm-label">View</p>
+      <div class="mode-switch mode-switch--full" role="group" aria-label="View mode">
+        <a href="./"><svg><use href="#i-list"/></svg>Classic</a>
+        <span aria-current="page"><svg viewBox="0 0 48 48"><use href="#i-tree"/></svg>Tree</span>
+      </div>
+      <ol class="mm-links">
+        <li><a href="./#services"><span class="mm-no">01</span>Services</a></li>
+        <li><a href="./#work"><span class="mm-no">02</span>Work</a></li>
+        <li><a href="./#about"><span class="mm-no">03</span>About</a></li>
+        <li><a href="roots.html"><span class="mm-no">04</span>Roots<small>Mechanical engineering</small></a></li>
+      </ol>
+      <a class="btn btn--terra mm-cta" href="./#contact">Let's talk <svg><use href="#i-arrow"/></svg></a>
+      <p class="mm-direct">
+        <a href="mailto:olalekanamoo128@gmail.com">Email</a>
+        <a href="https://wa.me/2348062740991" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/olalekan-amoo-65bb83212/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
     </div>
   </div>
 </header>

@@ -146,14 +146,34 @@ p { margin: 0 0 1em; }
   .menu-btn { display: grid; }
   .nav { gap: 12px; }
   .nav-cta { order: 3; }
-  .nav.is-open + .mobile-menu { display: block; }
 }
 @media (max-width: 420px) { .nav-cta { display: none; } .brand { font-size: 1.15rem; } }
 
-.mobile-menu { display: none; border-top: 1px solid var(--line); padding: 12px 0 22px; }
-.mobile-menu ul { list-style: none; margin: 0 0 16px; padding: 0; }
-.mobile-menu li a { display: block; padding: 12px 0; font-family: var(--serif); font-size: 1.6rem; color: var(--forest-900); text-decoration: none; border-bottom: 1px solid var(--line); }
-.mobile-menu .mode-switch { display: inline-flex; }
+/* ---------- mobile menu: a panel over the page, not a push-down list ---------- */
+.menu-btn .i-shut { display: none; }
+.menu-btn[aria-expanded="true"] .i-open { display: none; }
+.menu-btn[aria-expanded="true"] .i-shut { display: block; }
+.mobile-menu {
+  display: none; position: fixed; z-index: 49; left: 0; right: 0; top: 76px; bottom: 0;
+  overflow-y: auto; overscroll-behavior: contain;
+  background: var(--cream); border-top: 1px solid var(--line);
+  padding: 22px var(--gutter) 32px;
+}
+.nav.is-open + .mobile-menu { display: flex; flex-direction: column; animation: menu-in .22s var(--ease); }
+@keyframes menu-in { from { opacity: 0; transform: translateY(-8px); } }
+.mm-label { font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.mode-switch--full { display: flex; width: 100%; }
+.mode-switch--full > * { flex: 1; justify-content: center; padding: 11px 14px; font-size: .92rem; }
+.mm-links { list-style: none; margin: 22px 0 26px; padding: 0; border-top: 1px solid var(--line); }
+.mm-links a { display: flex; align-items: baseline; gap: 14px; padding: 15px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-family: var(--serif); font-size: 1.55rem; line-height: 1.15; color: var(--forest-900); }
+.mm-links a:active { color: var(--terra); }
+.mm-no { font-style: italic; font-size: .95rem; color: var(--terra); min-width: 22px; }
+.mm-links small { font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--muted); margin-left: auto; }
+.mm-cta { width: 100%; }
+.mm-direct { display: flex; justify-content: center; gap: 26px; margin: 18px 0 0; font-size: .9rem; font-weight: 700; }
+.mm-direct a { color: var(--forest); text-decoration: none; padding: 10px 0; }
+html.menu-open { overflow: hidden; }
+@media (min-width: 981px) { .mobile-menu { display: none !important; } }
 
 /* ---------- hero ---------- */
 .hero { position: relative; padding: clamp(32px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); }

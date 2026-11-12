@@ -5,19 +5,20 @@
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // mobile menu
+  // mobile menu: panel over the page; ☰ becomes ✕; Escape, link taps and widening the window all close it
   const nav = document.querySelector('.nav');
   const menuBtn = document.querySelector('.menu-btn');
   if (menuBtn && nav) {
-    menuBtn.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
+    const setOpen = (open) => {
+      nav.classList.toggle('is-open', open);
+      document.documentElement.classList.toggle('menu-open', open);
       menuBtn.setAttribute('aria-expanded', String(open));
       menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    });
-    document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
+    };
+    menuBtn.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+    document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); menuBtn.focus(); } });
+    matchMedia('(min-width: 981px)').addEventListener('change', e => e.matches && setOpen(false));
   }
 
   // floating "Let's talk" on phones: show after the hero, hide once the contact section is visible
