@@ -27,4 +27,4 @@ cd public && python3 -m http.server 4321   # then open http://localhost:4321
 
 - **Tree mode content:** the `items` list at the top of `public/assets/js/tree.js`. `branch` and `t` set where each fruit hangs.
 - **Photos:** the full-size originals live in `photos/` and are never published. Run `npm install && npm run images` to regenerate the compressed sizes in `public/assets/img/`.
-- **Résumés:** replace the PDFs in `public/files/`, keeping the same file names.
+- **Résumé:** replace `public/files/Olalekan-Amoo-Software-Engineer-Resume.pdf`, keeping the same file name. The mechanical engineering résumé isn't published because it contains a home address; the Roots page asks visitors to request it by email instead.
