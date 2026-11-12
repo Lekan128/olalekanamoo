@@ -27,7 +27,7 @@
 .basket { display: flex; align-items: center; gap: 14px; font-size: .9rem; font-weight: 700; color: var(--forest); }
 .basket-dots { display: flex; gap: 6px; }
 .basket-dots i { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--sage-300); transition: background-color .3s; }
-.basket-dots i.on { background: var(--terra); border-color: var(--terra); }
+.basket-dots i.on { background: var(--forest); border-color: var(--forest); }
 .tree-intro .alt { margin-top: 28px; font-size: .92rem; color: var(--muted); }
 
 .panel { display: none; position: relative; overflow-y: auto; }
@@ -36,18 +36,18 @@
 .has-pick .tree-intro { display: none; }
 .panel-close { position: absolute; top: 18px; right: 18px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--cream); cursor: pointer; display: grid; place-items: center; }
 .panel-close svg { width: 18px; height: 18px; }
-.panel-kind { font-size: .74rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; }
+.panel-kind { font-size: .74rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--moss); margin-bottom: 14px; }
 .panel h2 { font-size: clamp(1.9rem, 3vw, 2.5rem); margin-bottom: 8px; padding-right: 48px; }
 .panel .org { font-weight: 700; color: var(--forest); margin-bottom: 2px; }
 .panel .when { font-size: .9rem; color: var(--muted); margin-bottom: 18px; }
-.panel .summary { font-family: var(--serif); font-size: 1.25rem; line-height: 1.4; color: var(--forest-900); padding: 16px 0; border-block: 1px solid var(--line); margin-bottom: 18px; }
+.panel .summary { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; font-size: 1.25rem; line-height: 1.4; color: var(--forest-900); padding: 16px 0; border-block: 1px solid var(--line); margin-bottom: 18px; }
 .panel ul.points { margin: 0 0 18px; padding-left: 18px; color: var(--muted); font-size: .95rem; }
 .panel ul.points li { margin-bottom: 8px; }
 .panel ul.points li::marker { color: var(--moss); }
 .panel-actions { display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center; margin-top: 24px; }
 .panel-foot { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .text-btn { background: none; border: 0; padding: 0; font-weight: 700; font-size: .88rem; color: var(--muted); cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
-.text-btn:hover { color: var(--terra); }
+.text-btn:hover { color: var(--moss); }
 .finale { background: var(--forest); color: var(--sage); border-radius: 18px; padding: 22px; margin-top: 24px; }
 .finale h3 { color: var(--paper); margin-bottom: 6px; }
 .finale p { font-size: .95rem; }
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 .fruit:focus-visible { outline: none; }
-.fruit:focus-visible .fruit-body { outline: 3px solid var(--terra); outline-offset: 4px; border-radius: 50%; }
+.fruit:focus-visible .fruit-body { outline: 3px solid var(--moss); outline-offset: 4px; border-radius: 50%; }
 .fruit-swing {
   position: absolute; left: 0; top: 0;
   display: flex; flex-direction: column; align-items: center;
@@ -84,8 +84,8 @@
 .fruit.is-picked .fruit-swing { animation: none; }
 .fruit.is-picked .string { opacity: 0; }
 .fruit.is-picked .fruit-label { opacity: 0; }
-.fruit.is-current .fruit-body { filter: drop-shadow(0 0 0 var(--terra)); }
-.fruit.is-current .fruit-body svg { outline: 2px dashed var(--terra); outline-offset: 5px; border-radius: 50%; }
+.fruit.is-current .fruit-body { filter: drop-shadow(0 0 0 var(--moss)); }
+.fruit.is-current .fruit-body svg { outline: 2px dashed var(--moss); outline-offset: 5px; border-radius: 50%; }
 
 .roots-link {
   position: absolute; z-index: 3; left: 50%; top: 93.5%; transform: translateX(-50%);
@@ -93,10 +93,10 @@
   text-decoration: none; white-space: nowrap;
   padding: 11px 14px; border-radius: 999px; background: rgba(251, 250, 245, .75); border: 1px dashed rgba(91, 69, 50, .5);
 }
-.roots-link:hover { background: var(--paper); color: var(--terra-700); }
+.roots-link:hover { background: var(--paper); color: var(--forest-900); }
 .hint {
   position: absolute; left: 50%; top: 2%; transform: translateX(-50%); z-index: 2;
-  font-family: var(--serif); font-style: italic; font-size: clamp(14px, 2cqw, 18px); color: var(--moss);
+  font-weight: 600; font-size: clamp(13px, 1.8cqw, 16px); color: var(--moss);
   white-space: nowrap; transition: opacity .5s;
 }
 .has-pick .hint { opacity: 0; }

@@ -41,12 +41,12 @@ const portrait = await sharp(`${SRC}/Lekan-a4.jpg`).rotate()
   .extract({ left: 600, top: 200, width: 4200, height: 4400 })
   .resize({ height: 630, width: 600, fit: "cover", position: "top" }).toBuffer();
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
-  <rect width="1200" height="630" fill="#1f3a2b"/>
-  <text x="70" y="250" font-family="Georgia, serif" font-size="68" fill="#f4f1e8">Olalekan Amoo</text>
+  <rect width="1200" height="630" fill="#1d3a2a"/>
+  <text x="70" y="250" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="66" fill="#f1f4ec">Olalekan Amoo</text>
   <text x="70" y="330" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#c9d8bd">Backend &amp; Cloud Engineer</text>
   <text x="70" y="380" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#c9d8bd">Java · Spring Boot · AWS · Azure</text>
-  <rect x="70" y="440" width="300" height="64" rx="32" fill="#c8643b"/>
-  <text x="220" y="481" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#fff">Let's build →</text>
+  <rect x="70" y="440" width="300" height="64" rx="32" fill="#c5e06a"/>
+  <text x="220" y="481" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#13281c">Let's build →</text>
 </svg>`;
 await sharp(Buffer.from(svg)).composite([{ input: portrait, left: 600, top: 0 }])
   .jpeg({ quality: 82, mozjpeg: true }).toFile(`${OUT}/og-card.jpg`);

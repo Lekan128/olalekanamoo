@@ -20,6 +20,7 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="sprout-mark" viewBox="0 0 32 32"><g stroke="#13281c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 30.5V15" fill="none"/><path d="M16 18.5C11 18.8 6.2 16 5 9.6c6.1-.9 10.4 2.4 11 8.9z" fill="#c5e06a"/><path d="M16 15.2c.6-6.6 5.4-10 12-9.4-.7 6.7-5.3 10.1-12 9.4z" fill="#c5e06a"/><path d="M8.6 12.4c2.6 1.3 4.6 3.1 6.4 5.4M24.6 9.2c-2.7 1.4-5 3.3-7.2 5.6" fill="none" stroke-width="1"/></g></symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5C10.8 3.4 4 8.4 4 15.6c0 1.6.4 3 1 4.4 1.4-5.6 5.2-9.5 10.6-11.8-4.6 3-7.6 7-9 12.3 1 .3 2 .5 3.1.5 7.1 0 10.8-6.2 10.8-17.5z"/></symbol>
     <symbol id="i-tree" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44V26M24 32l-6-5M24 29l7-6"/><path d="M14 30a9 9 0 0 1-1-17.5A11 11 0 0 1 34 10a9 9 0 0 1 1 18.5"/><circle cx="16" cy="22" r="2.4" fill="currentColor"/><circle cx="31" cy="18" r="2.4" fill="currentColor"/><circle cx="24" cy="14" r="2.4" fill="currentColor"/></symbol>
     <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
@@ -27,7 +28,7 @@
     <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
     <!-- fruit drawings -->
     <symbol id="f-role" viewBox="0 0 60 66">
-      <path d="M30 12c16 0 26 11 26 26S45 64 30 64 4 53 4 38s10-26 26-26z" fill="#c25a33"/>
+      <path d="M30 12c16 0 26 11 26 26S45 64 30 64 4 53 4 38s10-26 26-26z" fill="#a83a44"/>
       <path d="M15 28c3-6 9-10 16-10" stroke="#fbfaf5" stroke-opacity=".4" stroke-width="3.5" fill="none" stroke-linecap="round"/>
       <path d="M30 14c0-5 1-9 3-12" stroke="#5b4532" stroke-width="2.6" fill="none" stroke-linecap="round"/>
       <path d="M32 8c6-6 15-5 19-1-6 5-13 5-19 1z" fill="#4e7148"/>
@@ -39,14 +40,14 @@
       <path d="M31 9c-5-6-13-6-17-2 5 5 12 5 17 2z" fill="#4e7148"/>
     </symbol>
     <symbol id="f-cert" viewBox="0 0 60 60">
-      <g fill="#f6e3d7" stroke="#c25a33" stroke-opacity=".35" stroke-width="1.2">
+      <g fill="#f7ebef" stroke="#a83a44" stroke-opacity=".35" stroke-width="1.2">
         <ellipse cx="30" cy="15" rx="10" ry="13"/>
         <ellipse cx="30" cy="15" rx="10" ry="13" transform="rotate(72 30 32)"/>
         <ellipse cx="30" cy="15" rx="10" ry="13" transform="rotate(144 30 32)"/>
         <ellipse cx="30" cy="15" rx="10" ry="13" transform="rotate(216 30 32)"/>
         <ellipse cx="30" cy="15" rx="10" ry="13" transform="rotate(288 30 32)"/>
       </g>
-      <circle cx="30" cy="32" r="7" fill="#c25a33"/>
+      <circle cx="30" cy="32" r="7" fill="#a83a44"/>
       <circle cx="30" cy="32" r="3" fill="#d6a03f"/>
     </symbol>
   </defs>
@@ -58,7 +59,7 @@
   <div class="wrap">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="./" aria-label="Olalekan Amoo, home">
-        <span class="brand-mark"><svg style="color:#dce5d2"><use href="#i-leaf"/></svg></span>
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#sprout-mark"/></svg>
         Olalekan Amoo
       </a>
       <ul class="nav-links">
@@ -71,7 +72,7 @@
         <a href="./"><svg><use href="#i-list"/></svg>Classic</a>
         <span aria-current="page"><svg viewBox="0 0 48 48"><use href="#i-tree"/></svg>Tree</span>
       </div>
-      <a class="btn btn--terra btn--sm nav-cta" href="./#contact">Let's talk</a>
+      <a class="btn btn--lime btn--sm nav-cta" href="./#contact">Let's talk</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="i-open"><use href="#i-menu"/></svg><svg class="i-shut"><use href="#i-close"/></svg></button>
     </nav>
     <div class="mobile-menu" id="mobile-menu">
@@ -86,7 +87,7 @@
         <li><a href="./#about"><span class="mm-no">03</span>About</a></li>
         <li><a href="roots.html"><span class="mm-no">04</span>Roots<small>Mechanical engineering</small></a></li>
       </ol>
-      <a class="btn btn--terra mm-cta" href="./#contact">Let's talk <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--lime mm-cta" href="./#contact">Let's talk <svg><use href="#i-arrow"/></svg></a>
       <p class="mm-direct">
         <a href="mailto:olalekanamoo128@gmail.com">Email</a>
         <a href="https://wa.me/2348062740991" target="_blank" rel="noopener">WhatsApp</a>
@@ -99,7 +100,7 @@
 <main class="tree-layout" id="tree">
   <div class="tree-intro" id="tree-intro">
     <p class="eyebrow"><span class="no">Tree mode</span>Hands-on</p>
-    <h1>Pick a <em>fruit.</em></h1>
+    <h1>Pick a <span class="script">fruit.</span></h1>
     <p>Everything on this tree is part of my story: roles, side projects and certificates. Tap one to pluck it and see what's inside.</p>
     <ul class="legend">
       <li><svg viewBox="0 0 60 66"><use href="#f-role"/></svg>Roles I've held</li>

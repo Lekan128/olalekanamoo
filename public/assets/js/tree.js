@@ -232,7 +232,7 @@
     it.tags.forEach(t => { const li = document.createElement('li'); li.textContent = t; tags.appendChild(li); });
     const act = q('[data-actions]');
     const talk = it.kind === 'role' ? 'Ask me about this role' : it.kind === 'project' ? 'Want something like this?' : 'Let’s talk';
-    act.innerHTML = `<a class="btn btn--terra btn--sm" href="${CONTACT}">${talk} <svg><use href="#i-arrow"/></svg></a>` +
+    act.innerHTML = `<a class="btn btn--lime btn--sm" href="${CONTACT}">${talk} <svg><use href="#i-arrow"/></svg></a>` +
       it.links.map(([t, u]) => `<a class="link-arrow" href="${u}" target="_blank" rel="noopener">${t} ↗</a>`).join('');
     q('[data-finale]').hidden = picked.size !== items.length;
     layout.classList.add('has-pick');
